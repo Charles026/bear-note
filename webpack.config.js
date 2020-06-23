@@ -20,12 +20,8 @@ module.exports = {
       },
     plugins:[
         new HtmlWebpackPlugin({
-            title: 'charles.design',
+            title: 'bear-note',
             template: path.resolve('./src/index.html'),
-        }),
-        new HtmlWebpackPlugin({  // Also generate a about.html
-          filename: 'about.html',
-          template: path.resolve('./src/about.html')
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
@@ -60,7 +56,7 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
+                test: /\.(jpg|jpeg|gif|png|svg|webp|mp4)$/,
                 use: [
                   {
                     loader: 'file-loader',

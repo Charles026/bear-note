@@ -1,7 +1,7 @@
 {
-  "name": "charleschan.design",
+  "name": "bear-note",
   "version": "1.0.0",
-  "description": "charles.design",
+  "description": "bear note web",
   "main": "app.js",
   "scripts": {
     "start:dev": "webpack-dev-server",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://e.coding.net/charles0260/charleschan.design.git"
+    "url": ""
   },
   "author": "charles",
   "license": "ISC",
