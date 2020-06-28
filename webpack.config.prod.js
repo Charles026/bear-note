@@ -27,11 +27,6 @@ module.exports = function (env, argv) {
         template: path.resolve('./src/index.html'),
         favicon: path.resolve('./src/images/favicon.ico')
       }),
-      new HtmlWebpackPlugin({  // Also generate a about.html
-        filename: 'about.html',
-        template: path.resolve('./src/about.html'),
-        favicon: path.resolve('./src/images/favicon.ico')
-      }),
       new MiniCssExtractPlugin({
         filename: "style.css",
         chunkFilename: "[id].css"
@@ -66,7 +61,7 @@ module.exports = function (env, argv) {
           }
         },
         {
-          test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
+          test: /\.(jpg|jpeg|gif|png|svg|webp|mp4)$/,
           use: [
             {
               loader: "file-loader",
